@@ -8,12 +8,13 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.casadocodigo.loja.controllers.HomeController;
+import br.com.casadocodigo.loja.daos.ProductDAO;
 
 
 // liga o suporte a conversao de objetos para XML, JSON, validacao, RSS
 @EnableWebMvc
 // adicionamos pacotes por meio das classes que devem ser usados pelo container do spring
-@ComponentScan(basePackageClasses={HomeController.class})
+@ComponentScan(basePackageClasses={HomeController.class, ProductDAO.class})
 public class AppWebConfiguration {
 	
 	@Bean

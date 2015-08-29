@@ -7,7 +7,7 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// mapeia classes e controllers que devem ser carregados no container
-		return new Class[]{AppWebConfiguration.class};
+		return new Class[]{AppWebConfiguration.class, JPAConfiguration.class};
 	}
 
 	@Override
